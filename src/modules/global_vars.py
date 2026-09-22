@@ -1,0 +1,198 @@
+#!/bin/python3
+from evdev import ecodes as e
+
+device = 0
+uinput = 0
+saved_device_file = "../cache/saved_device.txt"
+
+Keys = {
+        "LB": 0,
+        "LT": 0,
+        "RB": 0,
+        "RT": 0,
+        "Y": 0,
+        "B": 0,
+        "A": 0,
+        "X": 0,
+        "SELECT": 0,
+        "START": 0,
+        "LAB": 0,
+        "RAB": 0,
+        "UP": 0,
+        "RIGHT": 0,
+        "DOWN": 0,
+        "LEFT": 0,
+        "LA_UP": 0,
+        "LA_RIGHT": 0,
+        "LA_DOWN": 0,
+        "LA_LEFT": 0,
+        "RA_UP": 0,
+        "RA_RIGHT": 0,
+        "RA_DOWN": 0,
+        "RA_LEFT": 0
+        }
+
+KeysCode = {
+        "LB": 310,
+        "LT": 312,
+        "RB": 311,
+        "RT": 313,
+        "Y": 308,
+        "B": 305,
+        "A": 304,
+        "X": 307,
+        "SELECT": 314,
+        "START": 315,
+        "LAB": 317,
+        "RAB": 318,
+        }
+
+CodeKeys = {
+        310: "LB",
+        312: "LT",
+        311: "RB",
+        313: "RT",
+        308: "Y",
+        305: "B",
+        304: "A",
+        307: "X",
+        314: "SELECT",
+        315: "START",
+        317: "LAB",
+        318: "RAB"
+        }
+
+CodeValueAbs = {
+        17: {
+            -1: "UP",
+            1: "DOWN"
+            },
+        16: {
+            1: "RIGHT",
+            -1: "LEFT"
+            },
+        1: {
+            -1: "LA_UP",
+            1: "LA_DOWN"
+            },
+        0: {
+            1: "LA_RIGHT",
+            -1: "LA_LEFT"
+            },
+        5: {
+            -1: "RA_UP",
+            1: "RA_DOWN"
+            },
+        2: {
+            1: "RA_RIGHT",
+            -1: "RA_LEFT"
+            }
+        }
+
+CodeValueDPad = {
+        17: {
+            -1: "UP",
+            1: "DOWN"
+            },
+        16: {
+            1: "RIGHT",
+            -1: "LEFT"
+            },
+        }
+
+CodeValueAnalog = {
+        17: {
+            -1: "UP",
+            1: "DOWN"
+            },
+        16: {
+            1: "RIGHT",
+            -1: "LEFT"
+            },
+        1: {
+            -1: "LA_UP",
+            1: "LA_DOWN"
+            },
+        0: {
+            1: "LA_RIGHT",
+            -1: "LA_LEFT"
+            },
+        5: {
+            -1: "RA_UP",
+            1: "RA_DOWN"
+            },
+        2: {
+            1: "RA_RIGHT",
+            -1: "RA_LEFT"
+            }
+        }
+
+KeyInput = {
+        "{a}": e.KEY_A,
+        "{b}": e.KEY_B,
+        "{c}": e.KEY_C,
+        "{d}": e.KEY_D,
+        "{e}": e.KEY_E,
+        "{f}": e.KEY_F,
+        "{g}": e.KEY_G,
+        "{h}": e.KEY_H,
+        "{i}": e.KEY_I,
+        "{j}": e.KEY_J,
+        "{k}": e.KEY_K,
+        "{l}": e.KEY_L,
+        "{m}": e.KEY_M,
+        "{n}": e.KEY_N,
+        "{o}": e.KEY_O,
+        "{p}": e.KEY_P,
+        "{q}": e.KEY_Q,
+        "{r}": e.KEY_R,
+        "{s}": e.KEY_S,
+        "{t}": e.KEY_T,
+        "{u}": e.KEY_U,
+        "{v}": e.KEY_V,
+        "{w}": e.KEY_W,
+        "{x}": e.KEY_X,
+        "{y}": e.KEY_Y,
+        "{z}": e.KEY_Z,
+
+        "{0}": e.KEY_0,
+        "{1}": e.KEY_1,
+        "{2}": e.KEY_2,
+        "{3}": e.KEY_3,
+        "{4}": e.KEY_4,
+        "{5}": e.KEY_5,
+        "{6}": e.KEY_6,
+        "{7}": e.KEY_7,
+        "{8}": e.KEY_8,
+        "{9}": e.KEY_9,
+
+        "{space}": e.KEY_SPACE,
+        "{enter}": e.KEY_ENTER,
+        "{esc}": e.KEY_ESC,
+        "{tab}": e.KEY_TAB,
+        "{backspace}": e.KEY_BACKSPACE,
+        "{delete}": e.KEY_DELETE,
+
+        "{up}": e.KEY_UP,
+        "{down}": e.KEY_DOWN,
+        "{left}": e.KEY_LEFT,
+        "{right}": e.KEY_RIGHT,
+
+        "{shift}": e.KEY_LEFTSHIFT,
+        "{ctrl}": e.KEY_LEFTCTRL,
+        "{alt}": e.KEY_LEFTALT,
+        "{meta}": e.KEY_LEFTMETA,
+
+        "{f1}": e.KEY_F1,
+        "{f2}": e.KEY_F2,
+        "{f3}": e.KEY_F3,
+        "{f4}": e.KEY_F4,
+        "{f5}": e.KEY_F5,
+        "{f6}": e.KEY_F6,
+        "{f7}": e.KEY_F7,
+        "{f8}": e.KEY_F8,
+        "{f9}": e.KEY_F9,
+        "{f10}": e.KEY_F10,
+        "{f11}": e.KEY_F11,
+        "{f12}": e.KEY_F12,
+        }
