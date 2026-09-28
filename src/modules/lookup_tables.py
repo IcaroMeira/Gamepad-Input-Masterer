@@ -1,37 +1,6 @@
 #!/bin/python3
 from evdev import ecodes as e
 
-device = 0
-uinput = 0
-saved_device_file = "../cache/saved_device.txt"
-
-Keys = {
-        "LB": 0,
-        "LT": 0,
-        "RB": 0,
-        "RT": 0,
-        "Y": 0,
-        "B": 0,
-        "A": 0,
-        "X": 0,
-        "SELECT": 0,
-        "START": 0,
-        "LAB": 0,
-        "RAB": 0,
-        "UP": 0,
-        "RIGHT": 0,
-        "DOWN": 0,
-        "LEFT": 0,
-        "LA_UP": 0,
-        "LA_RIGHT": 0,
-        "LA_DOWN": 0,
-        "LA_LEFT": 0,
-        "RA_UP": 0,
-        "RA_RIGHT": 0,
-        "RA_DOWN": 0,
-        "RA_LEFT": 0
-        }
-
 KeysCode = {
         "LB": 310,
         "LT": 312,
@@ -48,84 +17,52 @@ KeysCode = {
         }
 
 CodeKeys = {
-        310: "LB",
-        312: "LT",
-        311: "RB",
-        313: "RT",
-        308: "Y",
-        305: "B",
-        304: "A",
-        307: "X",
-        314: "SELECT",
-        315: "START",
-        317: "LAB",
-        318: "RAB"
-        }
+    310: ["LB"],
+    312: ["LT"],
+    311: ["RB"],
+    313: ["RT"],
+    308: ["Y"],
+    305: ["B"],
+    304: ["A"],
+    307: ["X"],
+    314: ["SELECT"],
+    315: ["START"],
+    317: ["LAB"],
+    318: ["RAB"],
+}
 
 CodeValueAbs = {
-        17: {
-            -1: "UP",
-            1: "DOWN"
-            },
-        16: {
-            1: "RIGHT",
-            -1: "LEFT"
-            },
-        1: {
-            -1: "LA_UP",
-            1: "LA_DOWN"
-            },
-        0: {
-            1: "LA_RIGHT",
-            -1: "LA_LEFT"
-            },
-        5: {
-            -1: "RA_UP",
-            1: "RA_DOWN"
-            },
-        2: {
-            1: "RA_RIGHT",
-            -1: "RA_LEFT"
-            }
-        }
-
-CodeValueDPad = {
-        17: {
-            -1: "UP",
-            1: "DOWN"
-            },
-        16: {
-            1: "RIGHT",
-            -1: "LEFT"
-            },
-        }
-
-CodeValueAnalog = {
-        17: {
-            -1: "UP",
-            1: "DOWN"
-            },
-        16: {
-            1: "RIGHT",
-            -1: "LEFT"
-            },
-        1: {
-            -1: "LA_UP",
-            1: "LA_DOWN"
-            },
-        0: {
-            1: "LA_RIGHT",
-            -1: "LA_LEFT"
-            },
-        5: {
-            -1: "RA_UP",
-            1: "RA_DOWN"
-            },
-        2: {
-            1: "RA_RIGHT",
-            -1: "RA_LEFT"
-            }
-        }
+    17: {
+        -1: ["UP"],
+         0: ["UP", "DOWN"],
+         1: ["DOWN"],
+    },
+    16: {
+         1: ["RIGHT"],
+         0: ["RIGHT", "LEFT"],
+        -1: ["LEFT"],
+    },
+    1: {
+        -1: ["LA_UP"],
+         0: ["LA_UP", "LA_DOWN"],
+         1: ["LA_DOWN"],
+    },
+    0: {
+         1: ["LA_RIGHT"],
+         0: ["LA_RIGHT", "LA_LEFT"],
+        -1: ["LA_LEFT"],
+    },
+    5: {
+        -1: ["RA_UP"],
+         0: ["RA_UP", "RA_DOWN"],
+         1: ["RA_DOWN"],
+    },
+    2: {
+         1: ["RA_RIGHT"],
+         0: ["RA_RIGHT", "RA_LEFT"],
+        -1: ["RA_LEFT"],
+    },
+}
 
 KeyInput = {
         "{a}": e.KEY_A,

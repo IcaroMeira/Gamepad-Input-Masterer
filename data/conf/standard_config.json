@@ -1,0 +1,583 @@
+{
+    "[RB]": {
+        "a": {
+            "dep": [
+                "LA_UP"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{a}"
+            ]
+        },
+        "b": {
+            "dep": [
+                "LA_RIGHT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{b}"
+            ]
+        },
+        "h": {
+            "dep": [
+                "LA_DOWN"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{h}"
+            ]
+        },
+        "f": {
+            "dep": [
+                "LA_LEFT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{f}"
+            ]
+        },
+        "0": {
+            "dep": [
+                "LA_UP",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{0}"
+            ]
+        },
+        "5": {
+            "dep": [
+                "LA_DOWN",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{5}"
+            ]
+        },
+        "t": {
+            "dep": [
+                "LA_RIGHT",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{t}"
+            ]
+        },
+        "w": {
+            "dep": [
+                "LA_LEFT",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{w}"
+            ]
+        }
+    },
+    "[Y]": {
+        "e": {
+            "dep": [
+                "LA_UP"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{e}"
+            ]
+        },
+        "c": {
+            "dep": [
+                "LA_RIGHT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{c}"
+            ]
+        },
+        "g": {
+            "dep": [
+                "LA_DOWN"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{g}"
+            ]
+        },
+        "j": {
+            "dep": [
+                "LA_LEFT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{j}"
+            ]
+        },
+        "1": {
+            "dep": [
+                "LA_UP",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{1}"
+            ]
+        },
+        "6": {
+            "dep": [
+                "LA_DOWN",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{6}"
+            ]
+        },
+        "v": {
+            "dep": [
+                "LA_RIGHT",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{v}"
+            ]
+        }
+    },
+    "[B]": {
+        "i": {
+            "dep": [
+                "LA_UP"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{i}"
+            ]
+        },
+        "d": {
+            "dep": [
+                "LA_RIGHT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{d}"
+            ]
+        },
+        "l": {
+            "dep": [
+                "LA_DOWN"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{l}"
+            ]
+        },
+        "k": {
+            "dep": [
+                "LA_LEFT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{k}"
+            ]
+        },
+        "2": {
+            "dep": [
+                "LA_UP",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{2}"
+            ]
+        },
+        "7": {
+            "dep": [
+                "LA_DOWN",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{7}"
+            ]
+        },
+        "x": {
+            "dep": [
+                "LA_RIGHT",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{x}"
+            ]
+        }
+    },
+    "[A]": {
+        "o": {
+            "dep": [
+                "LA_UP"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{o}"
+            ]
+        },
+        "p": {
+            "dep": [
+                "LA_RIGHT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{p}"
+            ]
+        },
+        "m": {
+            "dep": [
+                "LA_DOWN"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{m}"
+            ]
+        },
+        "r": {
+            "dep": [
+                "LA_LEFT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{r}"
+            ]
+        },
+        "3": {
+            "dep": [
+                "LA_UP",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{3}"
+            ]
+        },
+        "8": {
+            "dep": [
+                "LA_DOWN",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{8}"
+            ]
+        },
+        "y": {
+            "dep": [
+                "LA_RIGHT",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{y}"
+            ]
+        }
+    },
+    "[X]": {
+        "u": {
+            "dep": [
+                "LA_UP"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{u}"
+            ]
+        },
+        "q": {
+            "dep": [
+                "LA_RIGHT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{q}"
+            ]
+        },
+        "n": {
+            "dep": [
+                "LA_DOWN"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{n}"
+            ]
+        },
+        "s": {
+            "dep": [
+                "LA_LEFT"
+            ],
+            "exc": [
+                "LB"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{s}"
+            ]
+        },
+        "4": {
+            "dep": [
+                "LA_UP",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{4}"
+            ]
+        },
+        "9": {
+            "dep": [
+                "LA_DOWN",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{9}"
+            ]
+        },
+        "z": {
+            "dep": [
+                "LA_RIGHT",
+                "LB"
+            ],
+            "exc": [
+                "NULL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{z}"
+            ]
+        }
+    },
+    "[START]": {
+        "main": {
+            "dep": [
+                "NULL"
+            ],
+            "exc": [
+                "ALL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "QUIT"
+            ]
+        }
+    },
+    "[UP]": {
+        "backspace": {
+            "dep": [
+                "LT"
+            ],
+            "exc": [
+                "ALL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{backspace}"
+            ]
+        }
+    },
+    "[DOWN]": {
+        "exemple": {
+            "dep": [
+                "NULL"
+            ],
+            "exc": [
+                "ALL"
+            ],
+            "indep": [
+                "NULL"
+            ],
+            "func": [
+                "{a}",
+                "{b}",
+                "{c}",
+                "{d}"
+            ]
+        }
+    }
+}
